@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+:root {
+  --Red: hsl(0, 100%, 68%);
+  --VeryDarkBlue: hsl(230, 29%, 20%);
+  --DarkGrayishBlue: hsl(230, 11%, 40%);
+  --GrayishBlue: hsla(235, 7%, 65%, 0.507);
+  --LightGrayishBlue: hsl(207, 33%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.hero__description {
+  margin-top: 12%;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.hero__description--overTitle {
+  display: flex;
+  align-items: center;
+}
+.hero__description--new {
+  border: 1px solid var(--VeryDarkBlue);
+  border-radius: 10px;
+  background: var(--VeryDarkBlue);
+  color: white;
+  padding: 0.5%;
+  margin-right: 3%;
+}
+
+.hero__description--overTitle p:last-child {
+  color: var(--GrayishBlue);
+  margin-right: 2%;
+}
+
+.hero__description--principal {
+  width: 90%;
+}
+.hero__description--title {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--VeryDarkBlue);
+}
+
+.hero__description--principal p {
+  color: var(--GrayishBlue);
+  font-size: 25px;
+  margin: 4% 0 5% 0;
+}
+.hero_description--button {
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+  justify-content: space-between;
+}
+
+.hero_description--text {
+  width: 60%;
+  display: flex;
+}
+
+.hero_description--text p {
+  margin-right: 4%;
+  font-size: 18px;
+}
+button {
+  background: var(--Red);
+  color: var(--LightGrayishBlue);
+  padding: 2% 5%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 1%;
+  cursor: pointer;
+}
+
+.hero__container--images {
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero__container--background {
+  height: 70vh;
+  width: 100%;
+  background-color: var(--GrayishBlue);
+  border-bottom-left-radius: 25%;
+}
+
+.hero__container--background img {
+  margin-top: 15%;
+}
+
+@media screen and (max-width: 400px){
+  
+
+  .hero_description--button {
+    display: block;
+  } 
+
+  button {
+    padding: 2%;
+
+  }
+  .hero_description--text{
+    width: 50%;
+  }
+  .hero_description--text p {
+    font-size: 10px;
+  }
+  .hero__container--images {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .hero__container--background {
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    right: 0;
+  }
+
+  .hero__container--background img {
+    
+    width: 300%;
+    height: 70%;
+    margin-top: 40%;
+    margin-left: -100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    display: block;
+  }
+  .hero__description {
+    width: 100%;
+    height: 50vh;
+    margin-top: 100%;
+    padding-left: 10%;
+    padding-top: 12%;
+    margin-bottom: 0;
+  }
+  .hero__description--overTitle {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .hero__description--new {
+    padding: 2%;
+  }
+
+  .hero__description--title {
+    font-size: 45px;
+  }
+
+  .hero_description--button {
+    justify-content: space-evenly;
+  }
+
+  button {
+    padding: 2%;
+    width: 180px;
+  }
+
+  .hero_description--text p {
+    font-size: 14px;
+  }
+  .hero__container--images {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .hero__container--background {
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    right: 0;
+  }
+
+  .hero__container--background img {
+    
+    width: 300%;
+    height: 70%;
+    margin-top: 40%;
+    margin-left: -100%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .hero_description--button {
+    width: 90vw;
+  }
+
+  button{
+    padding: 2% 10%;
+  }
+  .hero_description--text {
+    width: 100%;
+  }
+
+  .hero_description--text p{
+    font-size: 18px;
+  }
+}
